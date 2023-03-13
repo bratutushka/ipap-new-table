@@ -164,15 +164,13 @@ section > div {
     display: none;
   }
   .table5 > div {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto min-content;
   }
-  .table5 > div > div:first-child {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  .table5 > div > div {
+    display: none;
   }
-  .table5 > div > div:last-child {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  .table5 > div > div:nth-child(-n+2) {
+    display: block;
   }
 }
 @media (max-width: 800px) {
