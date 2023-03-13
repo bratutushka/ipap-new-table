@@ -119,6 +119,15 @@ section > div {
   border-bottom: 1px dotted #8cc7ea;
 }
 
+.table5 font {
+  display: none;
+}
+.table5 > div {
+  display: grid;
+  grid-template-columns: 35% repeat(5, 1fr);
+  gap: 10px;
+}
+
 .new {
   background: #fabd1b;
   padding: 2px 6px;
@@ -137,6 +146,20 @@ section > div {
   .table4 > div:nth-child(3) {
     display: grid;
     grid-template-columns: 50% auto min-content;
+  }
+  .table5 font {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .table5 > div:first-child {
+    display: none;
+  }
+  .table5 > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .table5 > div > div:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
 @media (max-width: 800px) {
@@ -178,4 +201,4 @@ section > div {
     display: inline;
   }
 }
-/* Стиль адаптивной таблицы *//*# sourceMappingURL=main.css.map */
+/* Стиль адаптивной таблицы *//*# sourceMappingURL=style.css.map */

@@ -146,6 +146,21 @@ section {
     }
 }
 
+
+.table5 {
+    font {
+        display: none;
+    }
+
+    &>div {
+        display: grid;
+        grid-template-columns: 35% repeat(5, 1fr);
+        gap: 10px;
+    }
+}
+
+
+
 .new {
     background: #fabd1b;
     padding: 2px 6px;
@@ -164,6 +179,26 @@ section {
         &>div:nth-child(3) {
             display: grid;
             grid-template-columns: 50% auto min-content;
+        }
+    }
+
+    .table5 {
+        font {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        &>div:first-child {
+            display: none;
+        }
+
+        &>div {
+            grid-template-columns: repeat(2, 1fr);
+
+            &>div:first-child {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
         }
     }
 }
