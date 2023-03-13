@@ -152,10 +152,21 @@ section {
         display: none;
     }
 
+    &>div:first-child {
+        border: 0;
+        padding: 0;
+    }
+
+    &>div:last-child {
+        border: 0;
+    }
+
     &>div {
         display: grid;
         grid-template-columns: 35% repeat(5, 1fr);
         gap: 10px;
+        border-bottom: 1px dotted #8cc7ea;
+        padding: 10px 0;
     }
 }
 
