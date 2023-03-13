@@ -203,7 +203,7 @@ section {
       }
 
       &>div {
-         grid-template-columns: auto min-content;
+         grid-template-columns: auto 70px;
 
          &>div {
             display: none;

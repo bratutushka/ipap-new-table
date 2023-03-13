@@ -164,7 +164,7 @@ section > div {
     display: none;
   }
   .table5 > div {
-    grid-template-columns: auto min-content;
+    grid-template-columns: auto 70px;
   }
   .table5 > div > div {
     display: none;
