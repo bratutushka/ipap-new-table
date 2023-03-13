@@ -171,6 +171,7 @@ section > div {
   }
   .table5 > div > div:nth-child(-n+2) {
     display: block;
+    align-self: stretch;
   }
 }
 @media (max-width: 800px) {

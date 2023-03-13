@@ -166,6 +166,8 @@ section {
       gap: 10px;
       border-bottom: 1px dotted #8cc7ea;
       padding: 10px 0;
+
+
    }
 }
 
@@ -209,6 +211,7 @@ section {
 
          &>div:nth-child(-n+2) {
             display: block;
+            align-self: stretch;
          }
       }
    }
