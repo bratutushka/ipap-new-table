@@ -170,6 +170,10 @@ section > div {
     grid-column-start: 1;
     grid-column-end: 3;
   }
+  .table5 > div > div:last-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 @media (max-width: 800px) {
   .table1 {
