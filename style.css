@@ -119,9 +119,6 @@ section > div {
   border-bottom: 1px dotted #8cc7ea;
 }
 
-.table5 font {
-  display: none;
-}
 .table5 > div:first-child {
   border: 0;
   padding: 0;
@@ -156,15 +153,8 @@ section > div {
     display: grid;
     grid-template-columns: 50% auto min-content;
   }
-  .table5 font {
-    display: block;
-    margin-bottom: 5px;
-  }
-  .table5 > div:first-child {
-    display: none;
-  }
   .table5 > div {
-    grid-template-columns: auto 70px;
+    grid-template-columns: auto 50px;
   }
   .table5 > div > div {
     display: none;

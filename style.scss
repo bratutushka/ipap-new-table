@@ -147,10 +147,6 @@ section {
 }
 
 .table5 {
-   font {
-      display: none;
-   }
-
    &>div:first-child {
       border: 0;
       padding: 0;
@@ -193,17 +189,9 @@ section {
    }
 
    .table5 {
-      font {
-         display: block;
-         margin-bottom: 5px;
-      }
-
-      &>div:first-child {
-         display: none;
-      }
 
       &>div {
-         grid-template-columns: auto 70px;
+         grid-template-columns: auto 50px;
 
          &>div {
             display: none;
