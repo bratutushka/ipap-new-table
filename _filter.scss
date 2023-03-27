@@ -1,0 +1,39 @@
+/* Стиль фильтра */
+
+.filter {
+   display: grid;
+   gap: 10px;
+   grid-template-columns: repeat(5, 1fr);
+   margin-bottom: 20px;
+
+   a {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #d6f0ff;
+      font-weight: 700;
+      cursor: pointer;
+
+      &:hover {
+         border-color: #8cc7ea;
+      }
+   }
+
+   a.current {
+      background-color: #2583bc;
+      color: #fff;
+      border-color: #2583bc;
+   }
+}
+
+.flavors {
+   display: grid;
+   gap: 10px;
+}
+
+@media(max-width: 800px) {
+   .filter {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+/* Стиль фильтра */

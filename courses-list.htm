@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>ИПАП-таблицы</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+
+   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+   <script src="filter.js"></script>
+</head>
+
+<body>
+   <section>
+      <div>
+
+         <h1>Пример списка курсов</h1>
+
+         <div class="filter" id="flavor-nav">
+            <a rel="all" class="current">Все курсы</a>
+            <a rel="fullTime">Очные</a>
+            <a rel="dist">Дистанционные</a>
+            <a rel="webinar">Вебинары</a>
+            <a rel="videoCourse">Видеокурсы</a>
+         </div>
+
+         <div id="all-flavors" class="flavors">
+            <div class="courses-list flavor all fullTime">
+               <details>
+                  <summary>Повышение квалификации в сметном деле</summary>
+                  <div>
+                     <a href="">Видеокурс: Капитальный и текущий ремонт</a>
+                     <a href="">Видеокурс: Монтаж оборудование и ПНР</a>
+                     <a href="">Видеокурс: Экспертиза проектно-сметной документации</a>
+                  </div>
+               </details>
+               <details>
+                  <summary>Повышение квалификации в сметном деле</summary>
+                  <div>
+                     <a href="">Видеокурс: Капитальный и текущий ремонт</a>
+                     <a href="">Видеокурс: Монтаж оборудование и ПНР</a>
+                     <a href="">Видеокурс: Экспертиза проектно-сметной документации</a>
+                  </div>
+               </details>
+            </div>
+            <div class="courses-list flavor all dist">
+               <details>
+                  <summary>Цикл семинаров «Последние изменения 2021 - 2022»</summary>
+                  <div>
+                     <a href="">Обучающий семинар «Особенности определения сметной стоимости объектов реконструкции и капитального ремонта»</a>
+                     <a href="">Обучающий семинар «Главные документы сметчика»</a>
+                     <a href="">Обучающий семинар «Учет в сметах затрат на строительство временных зданий и сооружений и удорожание работ в зимнее время»</a>
+                     <a href="">Обучающий семинар «Методика определения сметной стоимости строительства, реконструкции, капитального ремонта, сноса объектов капитального строительства, работ по сохранению объектов культурного наследия (приказы Минстроя РФ №421/пр)»</a>
+                     <a href="">Обучающий семинар «Новые требования по расчету затрат на службу заказчика, нормативы затрат по накладным расходам и сметной прибыли (приказы Минстроя РФ №297/пр, 774/пр, 812/пр)»</a>
+                     <a href="">Обучающий семинар «Экспертизе проектной документации ( приказ Минстроя РФ №421/пр)»</a>
+                     <a href="">Обучающий семинар "Порядок расчета изменения цены контракта"</a>
+                  </div>
+               </details>
+            </div>
+            <div class="courses-list flavor all webinar">
+               <details>
+                  <summary>Аттестация специалистов-сметчиков</summary>
+                  <div>
+                     <a href="">Видеокурс: Капитальный и текущий ремонт</a>
+                     <a href="">Видеокурс: Монтаж оборудование и ПНР</a>
+                     <a href="">Видеокурс: Экспертиза проектно-сметной документации</a>
+                  </div>
+               </details>
+            </div>
+            <div class="courses-list flavor all videoCourse">
+               <details>
+                  <summary>Курсы для инженерно-технических работников (ИТР)</summary>
+                  <div>
+                     <a href="">Видеокурс: Капитальный и текущий ремонт</a>
+                     <a href="">Видеокурс: Монтаж оборудование и ПНР</a>
+                     <a href="">Видеокурс: Экспертиза проектно-сметной документации</a>
+                  </div>
+               </details>
+            </div>
+         </div>
+
+      </div>
+   </section>
+</body>
+
+</html>

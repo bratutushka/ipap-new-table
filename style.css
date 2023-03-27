@@ -1,25 +1,5 @@
 @charset "UTF-8";
-body {
-  font-family: "PT Sans", sans-serif;
-}
-
-section {
-  padding: 60px 0;
-}
-section > div {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1332px;
-}
-
 /* Стиль адаптивной таблицы */
-.link1 {
-  color: #2583bc;
-}
-.link1:hover {
-  color: #1e77ad;
-}
-
 .request {
   background: #2583bc;
   border-radius: 6px;
@@ -27,7 +7,7 @@ section > div {
   color: #fff;
 }
 .request:hover {
-  background: #1e77ad;
+  background: #0090e7;
 }
 
 .table {
@@ -203,4 +183,122 @@ section > div {
     display: inline;
   }
 }
-/* Стиль адаптивной таблицы *//*# sourceMappingURL=style.css.map */
+/* Стиль адаптивной таблицы */
+/* Стиль списка курса */
+.courses-list {
+  display: grid;
+  gap: 10px;
+}
+.courses-list a {
+  display: block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #2583bc;
+  padding-left: 20px;
+  position: relative;
+}
+.courses-list a:before {
+  content: "−";
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+}
+.courses-list a:last-child {
+  margin-bottom: 0;
+}
+.courses-list a:hover {
+  color: #0090e7;
+}
+
+details {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  border: 1px solid #8cc7ea;
+}
+details summary {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  font-size: 21px;
+  padding-right: 30px;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+details summary::before, details summary::after {
+  position: absolute;
+  right: 0;
+  top: -3px;
+  font-size: 30px;
+  font-family: "Material Icons";
+}
+details summary::before {
+  content: "+";
+  font-weight: 700;
+  transition: all 0.3s ease 0s;
+}
+details > div {
+  border-top: 1px dotted #8cc7ea;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+
+details[open] summary::before {
+  transform: rotate(45deg);
+}
+
+/* Стиль списка курса */
+/* Стиль фильтра */
+.filter {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 20px;
+}
+.filter a {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #d6f0ff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.filter a:hover {
+  border-color: #8cc7ea;
+}
+.filter a.current {
+  background-color: #2583bc;
+  color: #fff;
+  border-color: #2583bc;
+}
+
+.flavors {
+  display: grid;
+  gap: 10px;
+}
+
+@media (max-width: 800px) {
+  .filter {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Стиль фильтра */
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+section {
+  padding: 60px 0;
+}
+section > div {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1332px;
+}
+
+.link1 {
+  color: #2583bc;
+}
+.link1:hover {
+  color: #0090e7;
+}/*# sourceMappingURL=style.css.map */
