@@ -1,4 +1,6 @@
-$(function () {
+$(document).ready(function () {
+	$('.about-course').hide();
+
 	var newSelection = "";
 	$("#flavor-nav a").click(function () {
 		$("#all-flavors").show();
@@ -12,3 +14,4 @@ $(function () {
 		$("#all-flavors").fadeTo();
 	});
 });
+

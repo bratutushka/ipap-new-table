@@ -10,7 +10,6 @@
       padding: 10px;
       border-radius: 5px;
       border: 1px solid #d6f0ff;
-      font-weight: 700;
       cursor: pointer;
 
       &:hover {
@@ -28,6 +27,12 @@
 .flavors {
    display: grid;
    gap: 10px;
+}
+
+.about-course {
+   p {
+      margin: 0 0 20px 0;
+   }
 }
 
 @media(max-width: 800px) {
