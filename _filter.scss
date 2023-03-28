@@ -11,6 +11,7 @@
       border-radius: 5px;
       border: 1px solid #d6f0ff;
       cursor: pointer;
+      text-align: center;
 
       &:hover {
          border-color: #8cc7ea;
@@ -38,6 +39,11 @@
 @media(max-width: 800px) {
    .filter {
       grid-template-columns: repeat(2, 1fr);
+
+      a:first-child {
+         grid-column-start: 1;
+         grid-column-end: 3;
+      }
    }
 }
 

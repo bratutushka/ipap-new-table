@@ -260,6 +260,7 @@ details[open] summary::before {
   border-radius: 5px;
   border: 1px solid #d6f0ff;
   cursor: pointer;
+  text-align: center;
 }
 .filter a:hover {
   border-color: #8cc7ea;
@@ -282,6 +283,10 @@ details[open] summary::before {
 @media (max-width: 800px) {
   .filter {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .filter a:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
 /* Стиль фильтра */
