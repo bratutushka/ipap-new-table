@@ -427,10 +427,16 @@ details[open] summary::before {
   border-radius: 5px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  align-items: center;
+  overflow: hidden;
+}
+.stocks > div > div:nth-child(1) {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
 }
 .stocks > div > div:nth-child(2) {
+  align-self: center;
   padding: 20px;
 }
 .stocks img {
