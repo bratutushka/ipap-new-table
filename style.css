@@ -420,7 +420,7 @@ details[open] summary::before {
 .stocks {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 20px;
 }
 .stocks > div {
   border: 1px solid #d6f0ff;
