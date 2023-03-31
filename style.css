@@ -416,6 +416,51 @@ details[open] summary::before {
     margin: 0;
   }
 }
+/* Стиль для акций */
+.stocks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.stocks > div {
+  border: 1px solid #d6f0ff;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+.stocks > div > div:nth-child(2) {
+  padding: 20px;
+}
+.stocks img {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.stocks p {
+  margin: 0 0 15px 0;
+}
+.stocks p:first-child {
+  font-size: 18px;
+  font-weight: 700;
+}
+.stocks p:last-child {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .stocks {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .stocks > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* Стиль для акций */
 body {
   font-family: "PT Sans", sans-serif;
 }
@@ -431,6 +476,7 @@ section > div {
 
 .link1 {
   color: #2583bc;
+  text-decoration: none;
 }
 .link1:hover {
   color: #0090e7;
@@ -442,4 +488,8 @@ section > div {
 
 .grid {
   display: grid;
+}
+
+.ul1 {
+  padding-left: 17px;
 }/*# sourceMappingURL=style.css.map */

@@ -4,6 +4,7 @@
 @import "tabs";
 @import "education";
 @import "schedule";
+@import "stocks";
 
 body {
    font-family: 'PT Sans', sans-serif;
@@ -21,6 +22,7 @@ section {
 
 .link1 {
    color: #2583bc;
+   text-decoration: none;
 
    &:hover {
       color: #0090e7;
@@ -33,4 +35,8 @@ section {
 
 .grid {
    display: grid;
+}
+
+.ul1 {
+   padding-left: 17px;
 }
