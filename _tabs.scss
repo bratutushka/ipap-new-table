@@ -1,0 +1,45 @@
+/* Стиль табов */
+
+.tabs__caption {
+   padding: 0;
+   margin: 0 0 20px 0;
+   list-style: none;
+   display: grid;
+   gap: 10px;
+
+
+   li:not(.active) {
+      cursor: pointer;
+   }
+}
+
+.tabs__content {
+   display: none;
+
+   &.active {
+      display: block;
+   }
+}
+
+.tabs-style-1 {
+   li {
+      list-style: none;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #d6f0ff;
+      text-align: center;
+
+      &:not(.active):hover {
+         border-color: #8cc7ea;
+      }
+   }
+
+   .active {
+      background-color: #2583bc;
+      color: #fff;
+      border-color: #2583bc;
+   }
+}
+
+/* Стиль табов */

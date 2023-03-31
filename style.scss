@@ -1,6 +1,9 @@
 @import "tables";
 @import "courses-list";
 @import "filter";
+@import "tabs";
+@import "education";
+@import "schedule";
 
 body {
    font-family: 'PT Sans', sans-serif;
@@ -22,4 +25,12 @@ section {
    &:hover {
       color: #0090e7;
    }
+}
+
+.m-b-30 {
+   margin-bottom: 30px;
+}
+
+.grid {
+   display: grid;
 }

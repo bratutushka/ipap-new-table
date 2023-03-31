@@ -290,6 +290,132 @@ details[open] summary::before {
   }
 }
 /* Стиль фильтра */
+/* Стиль табов */
+.tabs__caption {
+  padding: 0;
+  margin: 0 0 20px 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+.tabs__caption li:not(.active) {
+  cursor: pointer;
+}
+
+.tabs__content {
+  display: none;
+}
+.tabs__content.active {
+  display: block;
+}
+
+.tabs-style-1 li {
+  list-style: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #d6f0ff;
+  text-align: center;
+}
+.tabs-style-1 li:not(.active):hover {
+  border-color: #8cc7ea;
+}
+.tabs-style-1 .active {
+  background-color: #2583bc;
+  color: #fff;
+  border-color: #2583bc;
+}
+
+/* Стиль табов */
+/* Стиль для образования */
+.education-tab {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.education-list {
+  padding: 0;
+  list-style-type: none;
+  counter-reset: num;
+}
+.education-list li {
+  display: grid;
+  grid-template-columns: auto 80px;
+  position: relative;
+  border-bottom: 1px solid #8cc7ea;
+  padding: 0 0 15px 20px;
+  margin-bottom: 15px;
+}
+.education-list li:before {
+  content: counter(num);
+  counter-increment: num;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.education-list li > div:last-child {
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .education-tab font {
+    display: block;
+  }
+}
+/* Стиль для образования */
+.schedule {
+  display: grid;
+  grid-template-columns: auto 150px;
+  gap: 40px;
+}
+.schedule > ul {
+  grid-template-columns: repeat(4, 1fr);
+}
+.schedule > div {
+  background-color: #d6f0ff;
+  margin: 0 0 20px 0;
+  padding: 4px;
+  border-radius: 5px;
+}
+.schedule label {
+  position: relative;
+}
+.schedule label::before {
+  font-family: "Material Icons";
+  content: "\e5cf";
+  position: absolute;
+  right: 5px;
+  top: 4px;
+}
+.schedule label select {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 10px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.inner {
+  display: none;
+}
+.inner.active {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .schedule {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .schedule > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .schedule .tabs__caption {
+    margin: 0;
+  }
+}
 body {
   font-family: "PT Sans", sans-serif;
 }
@@ -308,4 +434,12 @@ section > div {
 }
 .link1:hover {
   color: #0090e7;
+}
+
+.m-b-30 {
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
 }/*# sourceMappingURL=style.css.map */

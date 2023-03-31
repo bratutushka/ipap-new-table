@@ -1,0 +1,43 @@
+/* Стиль для образования */
+
+.education-tab {
+   grid-template-columns: repeat(2, 1fr);
+}
+
+.education-list {
+   padding: 0;
+   list-style-type: none;
+   counter-reset: num;
+
+   li {
+      display: grid;
+      grid-template-columns: auto 80px;
+      position: relative;
+      border-bottom: 1px solid #8cc7ea;
+      padding: 0 0 15px 20px;
+      margin-bottom: 15px;
+
+      &:before {
+         content: counter(num);
+         counter-increment: num;
+         position: absolute;
+         left: 0;
+         top: 0;
+      }
+
+      &>div:last-child {
+         text-align: right;
+      }
+
+   }
+}
+
+@media(max-width: 600px) {
+   .education-tab {
+      font {
+         display: block;
+      }
+   }
+}
+
+/* Стиль для образования */

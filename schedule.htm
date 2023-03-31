@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>ИПАП-таблицы</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+
+   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+   <script src="tabs.js"></script>
+</head>
+
+<body>
+   <section>
+      <div>
+         <!--#include virtual="menu.htm"-->
+         <h1>Расписание очных курсов</h1>
+         <div class="tabs">
+            <div class="schedule">
+               <ul class="tabs__caption tabs-style-1">
+                  <li class="active">Сметные курсы</li>
+                  <li>IT-курсы</li>
+                  <li>Другие курсы</li>
+                  <li>ЖКУ</li>
+               </ul>
+               <div>
+                  <label>
+                     <select>
+                        <option>Март</option>
+                        <option>Апрель</option>
+                        <option>Май</option>
+                     </select>
+                  </label>
+               </div>
+            </div>
+            <div class="tabs__content active">
+               <div class="inner active">Март. Сметные курсы 1</div>
+               <div class="inner">Апрель. Сметные курсы 2</div>
+               <div class="inner">Май. Сметные курсы 3</div>
+            </div>
+            <div class="tabs__content">
+               <div class="inner active">Март. IT-курсы. На данный месяц расписание не составлено. Следите за обновлениями на сайте.</div>
+               <div class="inner">Апрель. IT-курсы 2</div>
+               <div class="inner">Май. IT-курсы 3</div>
+            </div>
+            <div class="tabs__content">
+               <div class="inner active">Март. Другие курсы 1</div>
+               <div class="inner">Апрель. Другие курсы 2</div>
+               <div class="inner">Май. Другие курсы 3</div>
+            </div>
+            <div class="tabs__content">
+               <div class="inner active">Март. ЖКУ 1</div>
+               <div class="inner">Апрель. ЖКУ 2</div>
+               <div class="inner">Май. ЖКУ 3</div>
+            </div>
+
+         </div>
+         <script src="schedule.js"></script>
+      </div>
+   </section>
+</body>
+
+</html>
