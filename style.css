@@ -296,7 +296,6 @@ details[open] summary::before {
   margin: 0 0 20px 0;
   list-style: none;
   display: grid;
-  gap: 10px;
 }
 .tabs__caption li:not(.active) {
   cursor: pointer;
@@ -309,6 +308,9 @@ details[open] summary::before {
   display: block;
 }
 
+.tabs-style-1 {
+  gap: 10px;
+}
 .tabs-style-1 li {
   list-style: none;
   cursor: pointer;
@@ -324,6 +326,30 @@ details[open] summary::before {
   background-color: #2583bc;
   color: #fff;
   border-color: #2583bc;
+}
+
+.tabs-style-2 {
+  gap: 1px;
+  overflow: hidden;
+  border-radius: 5px;
+  outline: 1px solid #d6f0ff;
+}
+.tabs-style-2 li {
+  list-style: none;
+  cursor: pointer;
+  padding: 10px;
+  outline: 1px solid #d6f0ff;
+  outline-offset: 0;
+  text-align: center;
+  border: 0;
+}
+.tabs-style-2 li:not(.active):hover {
+  background-color: #f1faff;
+}
+.tabs-style-2 .active {
+  background-color: #2583bc;
+  color: #fff;
+  outline: 1px solid #2583bc;
 }
 
 /* Стиль табов */
@@ -365,7 +391,7 @@ details[open] summary::before {
 .schedule {
   display: grid;
   grid-template-columns: auto 150px;
-  gap: 40px;
+  gap: 15%;
 }
 .schedule > ul {
   grid-template-columns: repeat(4, 1fr);
@@ -395,6 +421,7 @@ details[open] summary::before {
   padding: 10px;
   appearance: none;
   cursor: pointer;
+  background-color: #fff;
 }
 
 .inner {

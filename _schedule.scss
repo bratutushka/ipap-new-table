@@ -1,7 +1,7 @@
 .schedule {
    display: grid;
    grid-template-columns: auto 150px;
-   gap: 40px;
+   gap: 15%;
 
    &>ul {
       grid-template-columns: repeat(4, 1fr);
@@ -34,6 +34,7 @@
          padding: 10px;
          appearance: none;
          cursor: pointer;
+         background-color: #fff;
       }
    }
 }
